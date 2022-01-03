@@ -1,4 +1,5 @@
 {
+  "homepage": "http://bitan701.github.io/git-pages",
   "name": "git-pages",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "git-pages -d build"
   },
   "eslintConfig": {
     "extends": [
